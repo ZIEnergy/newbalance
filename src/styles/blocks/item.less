@@ -18,19 +18,23 @@
       position: absolute;
       background: #fff;
     }
-    &:after {
-      content: '● Есть в наличии';
+    
+    .item__availability {
       display: block;
-      list-style: disc;
-      color: #32a732;
-      font-size: 13px;
-      line-height: 25px;
-      font-family: @font-family-main;
-      margin-top: 3px;
-      position: absolute;
-      width: 100%;
-      text-align: center;
     }
+  }
+  
+  &__availability {
+    display: none;
+    list-style: disc;
+    color: #32a732;
+    font-size: 13px;
+    line-height: 25px;
+    font-family: @font-family-main;
+    margin-top: 3px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
   }
   
   &__content {

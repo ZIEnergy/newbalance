@@ -32,6 +32,7 @@ mixin item(img, name, priceNew, priceOld, size1, size2, size3, size4, size5)
         li.item__size
           a.item__size-link(href="#order" data-modal) 40
       a.btn(href="#") Купить
+      .item__availability ● Есть в наличии
       
 
 mixin modalCallback
@@ -79,7 +80,7 @@ mixin modalOrder
             option(value="38") 38
             option(value="39") 39
             option(value="40") 40
-          input(type="phone" placeholder="8 (999) 555-55-55" name="phone").input-text.input-text--large.modal__input-text
+          input(type="text" placeholder="8 (999) 555-55-55" name="phone").input-text.input-text--large.modal__input-text
           input(type="email" placeholder="E-mail" name="email").input-text.input-text--large.modal__input-text
           input(type="text" placeholder="Адрес доставки" name="address").input-text.input-text--large.modal__input-text
           button.btn.btn--large.modal__btn.modal-order__button Купить
