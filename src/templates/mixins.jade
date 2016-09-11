@@ -1,9 +1,34 @@
 mixin popular-item(img, name, priceNew, priceOld)
   a.popular-item(href="#")
-    img.popular-item__picture(src="img/"+img, alt="sneakers")
+    img.popular-item__picture(src="img/"+img, alt="New Balance")
     p.popular-item__name #{name}
     .popular-item__price
       .popular-item__price-new #{priceNew}
         span.popular-item__price-currency &#8381;
       .popular-item__price-old #{priceOld}
         span.popular-item__price-currency &#8381;
+        
+        
+mixin item(img, name, priceNew, priceOld, size1, size2, size3, size4, size5)
+  li.item.item--available
+   .item__content
+      a.item__link(href="#")
+        img.item__picture(src="img/"+img, alt="New Balance")
+        p.item__name #{name}
+      .item__price
+        .item__price-new #{priceNew}
+          span.item__price-currency &#8381;
+        .item__price-old #{priceOld}
+          span.item__price-currency &#8381;
+      ul.item__sizes-list
+        li.item__size
+          a.item__size-link(href="#") 36
+        li.item__size
+          a.item__size-link(href="#") 37
+        li.item__size
+          a.item__size-link(href="#") 38
+        li.item__size
+          a.item__size-link(href="#") 39
+        li.item__size
+          a.item__size-link(href="#") 40
+      a.item__button(href="#") Купить

@@ -1,0 +1,129 @@
+.item {
+  width: 200px;
+  margin-bottom: 50px;
+  
+  &:hover {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+      width: 100%;
+      z-index: 0;
+      height: 100%;
+      width: 234px;
+      height: 328px;
+      left: -20px;
+      top: -8px;
+      position: absolute;
+      background: #fff;
+    }
+    &:after {
+      content: '● Есть в наличии';
+      display: block;
+      list-style: disc;
+      color: #32a732;
+      font-size: 13px;
+      line-height: 25px;
+      font-family: @font-family-main;
+      margin-top: 3px;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  &__link {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    display: block;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  &__picture {
+    
+  }
+  
+  &__name {
+    width: 190px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    font-family: @font-family-main;
+  }
+  
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  &__price-new {
+    color: @color-primary;
+    font-size: 25px;
+    font-family: @font-family-main;
+    font-weight: 700;
+  }
+  
+  &__price-old {
+    font-size: 18px;
+    font-family: @font-family-main;
+    text-decoration: line-through;
+    margin-left: 10px;
+  }
+  
+  &__price-currency {
+    margin-left: 5px;
+  }
+  
+  &__sizes-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__size {
+    
+  }
+  
+  &__size-link {
+    font-size: 15px;
+    color: #000;
+    font-family: @font-family-main;
+    padding: 9px 3px;
+    &:hover {
+      background: #eee;
+      border-radius: 2px;
+    }
+  }
+  
+  &__button {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    font-size: 16px;
+    font-family: @font-family-main;
+    margin: 10px auto 0;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear, 0 0, 0 25.125, from(#ffae46), color-stop(0.48, #ff9103));
+    background-image: -webkit-linear-gradient(#ffae46, #ff9103 48%);
+    background-image: -moz-linear-gradient(#ffae46, #ff9103 48%);
+    background-image: -o-linear-gradient(#ffae46, #ff9103 48%);
+    background-image: linear-gradient(#ffae46, #ff9103 48%);
+    letter-spacing: 1.44px;
+  }
+}
