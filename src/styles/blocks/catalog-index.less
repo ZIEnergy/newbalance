@@ -8,15 +8,18 @@
   &__category-link {
     font-size: 20px;
     font-family: @font-family-main;
-    font-weight: 700;
     line-height: 24px;
     color: #000;
     text-transform: uppercase;
     text-decoration: none;
     .list-style-disk;
+    &:hover {
+      text-decoration: underline;
+    }
     
     &--red {
       color: #df5555;
+      font-weight: 700;
     }
   }
   
@@ -36,6 +39,9 @@
     text-transform: uppercase;
     font-family: @font-family-main;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   
   &__colors {

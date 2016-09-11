@@ -4,31 +4,82 @@ mixin popular-item(img, name, priceNew, priceOld)
     p.popular-item__name #{name}
     .popular-item__price
       .popular-item__price-new #{priceNew}
-        span.popular-item__price-currency &#8381;
+        span.popular-item__price-currency &nbsp;&#8381;
       .popular-item__price-old #{priceOld}
-        span.popular-item__price-currency &#8381;
+        span.popular-item__price-currency &nbsp;&#8381;
         
         
 mixin item(img, name, priceNew, priceOld, size1, size2, size3, size4, size5)
-  li.item.item--available
+  li.item
    .item__content
       a.item__link(href="#")
         img.item__picture(src="img/"+img, alt="New Balance")
         p.item__name #{name}
       .item__price
         .item__price-new #{priceNew}
-          span.item__price-currency &#8381;
+          span.item__price-currency &nbsp;&#8381;
         .item__price-old #{priceOld}
-          span.item__price-currency &#8381;
+          span.item__price-currency &nbsp;&#8381;
       ul.item__sizes-list
         li.item__size
-          a.item__size-link(href="#") 36
+          a.item__size-link(href="#order" data-modal) 36
         li.item__size
-          a.item__size-link(href="#") 37
+          a.item__size-link(href="#order" data-modal) 37
         li.item__size
-          a.item__size-link(href="#") 38
+          a.item__size-link(href="#order" data-modal) 38
         li.item__size
-          a.item__size-link(href="#") 39
+          a.item__size-link(href="#order" data-modal) 39
         li.item__size
-          a.item__size-link(href="#") 40
-      a.item__button(href="#") Купить
+          a.item__size-link(href="#order" data-modal) 40
+      a.btn(href="#") Купить
+      
+
+mixin modalCallback
+  .modal.modal-callback#callback
+    h3.modal__header Заказать звонок
+    p.modal__text Для заказа звонка заполните форму. <br> Мы свяжемся с Вами в указанное время!
+    form.form-callback(action="#")
+      input(type="text" placeholder="Имя" name="name").input-text.modal__input-text
+      input(type="text" placeholder="8 (999) 555-55-55" name="phone").input-text.modal__input-text
+      button.btn.btn--large.modal__btn Отправить
+      
+
+mixin modalOrder
+  .modal.modal-order#order
+    .modal-order__wrapper
+      ul.modal-order__features
+        li.order-feature
+          .order-feature__icon.order-feature__icon--delivery
+          .order-feature__content
+            .order-feature__header Доставка <br> за 90 минут
+            .order-feature__text По Москве до 3-х пар
+        li.order-feature
+          .order-feature__icon.order-feature__icon--return
+          .order-feature__content
+            .order-feature__header Возврат
+            .order-feature__text По Москве до 3-х пар
+        li.order-feature
+          .order-feature__icon.order-feature__icon--guarantee
+          .order-feature__content
+            .order-feature__header Гарантия
+            .order-feature__text Оригинальная обувь с гарантией на год!
+      .modal-order__content
+        .modal-order__item
+          img.modal-order__item-picture(src="img/order-1.jpg", alt="New Balance")
+          .modal-order__price-old 8 700
+          .modal-order__price-new 3 990 руб
+          .modal-order__name New Balance женские M574BCC (2294)
+          .modal-order__availability Товар в наличии
+        form.form-order.modal-order__form(action="#")
+          input(type="text" placeholder="Ваше имя" name="name").input-text.input-text--large.modal__input-text
+          select#size.select.modal-order__select(name="size")
+            option(value="36" disabled selected) Ваш размер
+            option(value="36") 36
+            option(value="37") 37
+            option(value="38") 38
+            option(value="39") 39
+            option(value="40") 40
+          input(type="phone" placeholder="8 (999) 555-55-55" name="phone").input-text.input-text--large.modal__input-text
+          input(type="email" placeholder="E-mail" name="email").input-text.input-text--large.modal__input-text
+          input(type="text" placeholder="Адрес доставки" name="address").input-text.input-text--large.modal__input-text
+          button.btn.btn--large.modal__btn.modal-order__button Купить
