@@ -1,0 +1,9 @@
+mixin popular-item(img, name, priceNew, priceOld)
+  a.popular-item(href="#")
+    img.popular-item__picture(src="img/"+img, alt="sneakers")
+    p.popular-item__name #{name}
+    .popular-item__price
+      .popular-item__price-new #{priceNew}
+        span.popular-item__price-currency &#8381;
+      .popular-item__price-old #{priceOld}
+        span.popular-item__price-currency &#8381;

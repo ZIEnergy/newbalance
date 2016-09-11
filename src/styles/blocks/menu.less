@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  
+  &__item {
+    padding: 0 5px;
+    &:nth-child(n+2) {
+      margin-left: 4px;
+    }
+  }
+  
+  &__item-link {
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 47px;
+    font-family: @font-family-main;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

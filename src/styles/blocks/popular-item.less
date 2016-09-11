@@ -1,0 +1,51 @@
+.popular-item {
+  text-decoration: none;
+  width: 150px;
+  margin: 9px;
+  position: relative;
+  
+  &:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 40px;
+    background: url(../img/popular-icon.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  &__picture {
+    
+  }
+  
+  &__name {
+    font-family: @font-family-main;
+    font-size: 16px;
+    color: @popular-color;
+  }
+  
+  &__price {
+    display: flex;
+    margin-top: 2px;
+  }
+  
+  &__price-new {
+    color: @popular-color;
+    font-family: @font-family-main;
+    font-weight: 700;
+  }
+  
+  &__price-old {
+    font-family: @font-family-main;
+    color: #767676;
+    text-decoration: line-through;
+    font-weight: 700;
+    margin-left: 5px;
+  }
+  
+  &__price-currency {
+    margin-left: 5px;
+  }
+}

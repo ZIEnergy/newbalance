@@ -1,0 +1,64 @@
+.banner {
+  width: 673px;
+  height: 411px;
+  background: url(../img/banner.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  flex: 0 0 auto;
+  
+  &__header {
+    font-size: 40px;
+    line-height: 53px;
+    color: #fff;
+    font-family: @font-family-main;
+    text-align: center;
+  }
+  
+  &__store {
+    font-size: 30px;
+    margin-top: 15px;
+    font-family: @font-family-main;
+    color: #fff;
+  }
+  
+  &__store-link {
+    color: #3687c1;
+  }
+  
+  &__button {
+    width: 318px;
+    background: @red-light;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: @font-family-main;
+    font-size: 36px;
+    text-transform: uppercase;
+    border: 1px solid rgba(10, 10, 12, 0.55);
+    box-shadow: -1.4px 1.4px 4px rgba(0, 0, 0, 0.64);
+    transition: all .4s linear;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 30px;
+    
+    &:hover {
+      background: #FF0535;
+    }
+    
+    &:before {
+      content: '';
+      display: block;
+      width: 33px;
+      height: 29px;
+      background: url(../img/sale-icon.png) no-repeat;
+      background-size: cover;
+      margin-right: 10px;
+      position: relative;
+      top: -2px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.store-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 170px;
+  
+  &__icon {
+    width: 21px;
+    height: 29px;
+    background: url(../img/store-icon.png) no-repeat;
+    background-size: cover;
+    flex: 0 0 auto;
+  }
+  &__content {
+    margin-left: 9px;
+  }
+  &__header {
+    color: @link-blue;
+    font-family: @font-family-main;
+    font-size: 14px;
+    line-height: 17px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__text {
+    color: @text-color;
+    font-family: @font-family-main;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
