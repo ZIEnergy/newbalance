@@ -6,3 +6,21 @@
     clear: both;
   }
 }
+
+.list-style-disk {
+  position: relative;
+  padding-left: 30px;
+  &:before {
+    content: '';
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    margin-top: -3px;
+  }
+}
