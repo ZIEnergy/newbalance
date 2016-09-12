@@ -1,6 +1,7 @@
 .item {
   width: 200px;
   margin-bottom: 50px;
+  margin-left: 64px;
   
   &:hover {
     position: relative;
@@ -22,6 +23,14 @@
     .item__availability {
       display: block;
     }
+  }
+  
+  &:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  
+  &:nth-child(n+16) {
+    display: none;
   }
   
   &__availability {
