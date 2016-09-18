@@ -16,7 +16,7 @@
   }
   
   &__gallery {
-    
+    position: relative;
   }
   
   &__gallery-big {
@@ -25,6 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   
   &__gallery-big-img {
@@ -39,7 +40,21 @@
   }
   
   &__gallery-sale {
-    
+    background: url(../img/sale-badge.png) no-repeat;
+    background-size: cover;
+    width: 136px;
+    height: 56px;
+    left: 0;
+    top: 50px;
+    position: absolute;
+    color: #fff;
+    font-family: @font-family-main;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-right: 35px;
+    padding-top: 10px;
+    transform: rotate(-45deg);
   }
   
   &__thumbnails-container {

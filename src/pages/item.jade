@@ -21,7 +21,7 @@ html(lang='en')
                   a.breadcrumbs__item-link(href="#") New Balance женские M574BCB (2294)
               .product__gallery
                 .product__gallery-big
-                  .product__gallery-sale
+                  .product__gallery-sale Экономия <br>5710 &#8381;
                   img.product__gallery-big-img(src="img/item-1-big.jpg", alt="New Balance")
                 .product__thumbnails-container
                   a.product__thumbnail(href="#")
@@ -55,108 +55,110 @@ html(lang='en')
                   li.product__sizes-item
                     a.product__sizes-item-content 41
               .size-question
-                a.size-question__link(href="#") Как определить свой размер?
+                a.size-question__link(href="#", data-size-popup) Как определить свой размер?
                 .size-question__popup
-                  h3.size-question__popup-header Как выбрать обувь своего размера?
-                  .size-question__popup-content
-                    img.size-question__picture(src="img/foot.jpg", alt="Foot")
-                    p.size-question__text Вам понадобится сантиметровой лента или линейка. <br><br> Поставьте ногу на чистый лист бумаги. Отметьте крайние границы ступни и измерьте расстояние между самыми удаленными точками стопы. 
-                  h3.size-question__popup-header Таблица соответствия размеров:
-                  .size__question__table-controls
-                    a.size-question__table-btn(href="#") Мужские
-                    a.size-question__table-btn(href="#") Женские
-                  table.size-question__table.size-question__table-man
-                    tr.size-question__table-row
-                      td.size-question__table-cell см
-                      td.size-question__table-cell 25
-                      td.size-question__table-cell 25.5
-                      td.size-question__table-cell 26.5
-                      td.size-question__table-cell 27
-                      td.size-question__table-cell 27.5
-                      td.size-question__table-cell 28.5
-                      td.size-question__table-cell 29
-                    tr.size-question__table-row
-                      td.size-question__table-cell RUS
-                      td.size-question__table-cell 39
-                      td.size-question__table-cell 40
-                      td.size-question__table-cell 41
-                      td.size-question__table-cell 42
-                      td.size-question__table-cell 43
-                      td.size-question__table-cell 44
-                      td.size-question__table-cell 45
-                    tr.size-question__table-row
-                      td.size-question__table-cell EUR
-                      td.size-question__table-cell 39
-                      td.size-question__table-cell 40
-                      td.size-question__table-cell 41
-                      td.size-question__table-cell 42
-                      td.size-question__table-cell 43
-                      td.size-question__table-cell 44
-                      td.size-question__table-cell 45
-                    tr.size-question__table-row
-                      td.size-question__table-cell UK
-                      td.size-question__table-cell 6.5
-                      td.size-question__table-cell 7.5
-                      td.size-question__table-cell 8
-                      td.size-question__table-cell 9
-                      td.size-question__table-cell 9.5
-                      td.size-question__table-cell 10.5
-                      td.size-question__table-cell 11.5
-                    tr.size-question__table-row
-                      td.size-question__table-cell US
-                      td.size-question__table-cell 7
-                      td.size-question__table-cell 8
-                      td.size-question__table-cell 8.5
-                      td.size-question__table-cell 9.5
-                      td.size-question__table-cell 10
-                      td.size-question__table-cell 11
-                      td.size-question__table-cell 12
-                  table.size-question__table.size-question__table-woman
-                    tr.size-question__table-row
-                      td.size-question__table-cell см
-                      td.size-question__table-cell 22.5
-                      td.size-question__table-cell 23
-                      td.size-question__table-cell 23.5
-                      td.size-question__table-cell 24.5
-                      td.size-question__table-cell 25
-                      td.size-question__table-cell 25.5
-                      td.size-question__table-cell 26.5
-                    tr.size-question__table-row
-                      td.size-question__table-cell RUS
-                      td.size-question__table-cell 35
-                      td.size-question__table-cell 36
-                      td.size-question__table-cell 37
-                      td.size-question__table-cell 38
-                      td.size-question__table-cell 39
-                      td.size-question__table-cell 40
-                      td.size-question__table-cell 41
-                    tr.size-question__table-row
-                      td.size-question__table-cell EUR
-                      td.size-question__table-cell 36
-                      td.size-question__table-cell 37
-                      td.size-question__table-cell 38
-                      td.size-question__table-cell 39
-                      td.size-question__table-cell 40
-                      td.size-question__table-cell 41
-                      td.size-question__table-cell 42
-                    tr.size-question__table-row
-                      td.size-question__table-cell UK
-                      td.size-question__table-cell 3.5
-                      td.size-question__table-cell 4
-                      td.size-question__table-cell 5
-                      td.size-question__table-cell 6
-                      td.size-question__table-cell 6.5
-                      td.size-question__table-cell 7.5
-                      td.size-question__table-cell 8
-                    tr.size-question__table-row
-                      td.size-question__table-cell US
-                      td.size-question__table-cell 5.5
-                      td.size-question__table-cell 6
-                      td.size-question__table-cell 7
-                      td.size-question__table-cell 8
-                      td.size-question__table-cell 8.5
-                      td.size-question__table-cell 9.5
-                      td.size-question__table-cell 10
+                  a.size-question__popup-close(href="#", data-size-popup)
+                  .size-question__question-popup-wrapper
+                    h3.size-question__popup-header Как выбрать обувь своего размера?
+                    .size-question__popup-content
+                      img.size-question__picture(src="img/foot.jpg", alt="Foot")
+                      p.size-question__text Вам понадобится сантиметровая лента или линейка. <br><br> Поставьте ногу на чистый лист бумаги. Отметьте крайние границы ступни и измерьте расстояние между самыми удаленными точками стопы. 
+                    h3.size-question__popup-header Таблица соответствия размеров:
+                    .size-question__table-controls
+                      a.size-question__table-btn.size-question__table-btn--man.size-question__table-btn--active(href="#") Мужские
+                      a.size-question__table-btn.size-question__table-btn--woman(href="#") Женские
+                    table.size-question__table.size-question__table--man
+                      tr.size-question__table-row
+                        td.size-question__table-cell см
+                        td.size-question__table-cell 25
+                        td.size-question__table-cell 25.5
+                        td.size-question__table-cell 26.5
+                        td.size-question__table-cell 27
+                        td.size-question__table-cell 27.5
+                        td.size-question__table-cell 28.5
+                        td.size-question__table-cell 29
+                      tr.size-question__table-row
+                        td.size-question__table-cell RUS
+                        td.size-question__table-cell 39
+                        td.size-question__table-cell 40
+                        td.size-question__table-cell 41
+                        td.size-question__table-cell 42
+                        td.size-question__table-cell 43
+                        td.size-question__table-cell 44
+                        td.size-question__table-cell 45
+                      tr.size-question__table-row
+                        td.size-question__table-cell EUR
+                        td.size-question__table-cell 39
+                        td.size-question__table-cell 40
+                        td.size-question__table-cell 41
+                        td.size-question__table-cell 42
+                        td.size-question__table-cell 43
+                        td.size-question__table-cell 44
+                        td.size-question__table-cell 45
+                      tr.size-question__table-row
+                        td.size-question__table-cell UK
+                        td.size-question__table-cell 6.5
+                        td.size-question__table-cell 7.5
+                        td.size-question__table-cell 8
+                        td.size-question__table-cell 9
+                        td.size-question__table-cell 9.5
+                        td.size-question__table-cell 10.5
+                        td.size-question__table-cell 11.5
+                      tr.size-question__table-row
+                        td.size-question__table-cell US
+                        td.size-question__table-cell 7
+                        td.size-question__table-cell 8
+                        td.size-question__table-cell 8.5
+                        td.size-question__table-cell 9.5
+                        td.size-question__table-cell 10
+                        td.size-question__table-cell 11
+                        td.size-question__table-cell 12
+                    table.size-question__table.size-question__table--woman
+                      tr.size-question__table-row
+                        td.size-question__table-cell см
+                        td.size-question__table-cell 22.5
+                        td.size-question__table-cell 23
+                        td.size-question__table-cell 23.5
+                        td.size-question__table-cell 24.5
+                        td.size-question__table-cell 25
+                        td.size-question__table-cell 25.5
+                        td.size-question__table-cell 26.5
+                      tr.size-question__table-row
+                        td.size-question__table-cell RUS
+                        td.size-question__table-cell 35
+                        td.size-question__table-cell 36
+                        td.size-question__table-cell 37
+                        td.size-question__table-cell 38
+                        td.size-question__table-cell 39
+                        td.size-question__table-cell 40
+                        td.size-question__table-cell 41
+                      tr.size-question__table-row
+                        td.size-question__table-cell EUR
+                        td.size-question__table-cell 36
+                        td.size-question__table-cell 37
+                        td.size-question__table-cell 38
+                        td.size-question__table-cell 39
+                        td.size-question__table-cell 40
+                        td.size-question__table-cell 41
+                        td.size-question__table-cell 42
+                      tr.size-question__table-row
+                        td.size-question__table-cell UK
+                        td.size-question__table-cell 3.5
+                        td.size-question__table-cell 4
+                        td.size-question__table-cell 5
+                        td.size-question__table-cell 6
+                        td.size-question__table-cell 6.5
+                        td.size-question__table-cell 7.5
+                        td.size-question__table-cell 8
+                      tr.size-question__table-row
+                        td.size-question__table-cell US
+                        td.size-question__table-cell 5.5
+                        td.size-question__table-cell 6
+                        td.size-question__table-cell 7
+                        td.size-question__table-cell 8
+                        td.size-question__table-cell 8.5
+                        td.size-question__table-cell 9.5
+                        td.size-question__table-cell 10
               .product__buttons
                 a.btn-buy(href="#") Купить сейчас
                 a.btn-cart(href="#") В корзину

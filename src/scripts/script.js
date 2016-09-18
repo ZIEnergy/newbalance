@@ -10,4 +10,23 @@ $(document).ready(function() {
     $(this).fadeOut('fast');
   });
   
+  $('[data-size-popup]').click(function(e) {
+    e.preventDefault();
+    $('.size-question__popup').fadeToggle('fast');
+  });
+  
+  $('.size-question__table-btn').click(function(e) {
+    $('.size-question__table-btn').toggleClass('size-question__table-btn--active');
+  });
+  
+  $('.size-question__table-btn--man').click(function(e) {
+    $('.size-question__table--woman').hide();
+    $('.size-question__table--man').fadeIn('fast');
+  });
+  
+  $('.size-question__table-btn--woman').click(function(e) {
+    $('.size-question__table--man').hide();
+    $('.size-question__table--woman').fadeIn('fast');
+  });
+  
 });
