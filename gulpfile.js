@@ -40,7 +40,8 @@ gulp.task('fonts', function () {
 
 gulp.task('connect', function() {
   connect.server({
-    root: './build'
+    root: './build',
+    port: 8000
   });
 });
 

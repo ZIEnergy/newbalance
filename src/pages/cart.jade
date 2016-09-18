@@ -1,0 +1,83 @@
+doctype html
+html(lang='en')
+  include ../templates/head.jade
+  include ../templates/mixins.jade
+  
+  body
+    .wrapper
+      include ../templates/header.jade
+      .content
+        form.order(action="#" method="POST")
+          h1.order__header Оформление заказа
+          table.order__table
+            tr.order__table-row
+              th.order__table-header Фото
+              th.order__table-header Наименование
+              th.order__table-header Размер
+              th.order__table-header Количество
+              th.order__table-header Цена
+              th.order__table-header Итог
+              th.order__table-header
+            tr.order__table-row
+              td.order__table-cell
+                img.order__table-img(src="img/order-item.jpg", alt="New Balance")
+              td.order__table-cell
+                .order__table-name New Balance мужские M574TK
+              td.order__table-cell
+                select#cart-size.order__table-size(name="size")
+                  option(value="40") 40
+                  option(value="41") 41
+                  option(value="42") 42
+                  option(value="43") 43
+                  option(value="44") 44
+                  option(value="45") 45
+              td.order__table-cell
+                .order__table-amount
+                  a.order__table-amount-decrement -
+                  input.order__input-amount(type="text", value="1")
+                  a.order__table-amount-increment +
+              td.order__table-cell
+                .order__table-price 3 990
+              td.order__table-cell
+                .order__table-price-overall 3 990
+              td.order__table-cell
+                a.order__table-remove(href="#")
+          .order__bottom
+            .order__bottom-left
+              .order__form-item
+                label.order__form-item-header Имя:
+                input.input-text.input-text--grey(type="text" placeholder="Ваше имя")
+              .order__form-item
+                label.order__form-item-header Контактный телефон:
+                input.input-text.input-text--grey(type="text" placeholder="8 (999) 555-55-55")
+              .order__form-item
+                label.order__form-item-header E-mail:
+                input.input-text.input-text--grey(type="text" placeholder="E-mail")
+            .order__bottom-right
+              .order__radio-item
+                input(type="radio" id="free")
+                label.order__radio-content(for="free")
+                  .order__radio-header Бесплатно
+                  .order__radio-text Самовывоз из шоу-рума м.Чистые пруды, ул.Мясницкая, 17
+              .order__radio-item
+                input(type="radio" id="moscow")
+                label.order__radio-content(for="moscow")
+                  .order__radio-header 300 руб.
+                  .order__radio-text Доставка по Москве курьерской службой
+              .order__radio-item
+                input(type="radio" id="russia")
+                label.order__radio-content(for="russia")
+                  .order__radio-header 500 руб. (приблизительно)
+                  .order__radio-text Доставка по России почтой EMS, 5-12 дней
+              .order__form-item.order__form-item--address
+                label.order__form-item-header Адрес доставки:
+                input.input-text.input-text--grey(type="text" placeholder="Адрес доставки")
+          .order__form-item
+            label.order__form-item-header Комментарий к заказу:
+            textarea.input-text.input-text--grey.order__textarea(type="text")
+          .order__controls
+            p.order__fullprice Итого: 3990 &#8381;
+            button.order__btn Заказать
+      include ../templates/footer.jade
+      +modalCallback
+      +modalOrder
