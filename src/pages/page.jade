@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+  include ../templates/head.jade
+  include ../templates/mixins.jade
+  
+  body
+    .wrapper
+      include ../templates/header.jade
+      .content
+        include ../templates/sidebar.jade
+        section.section
+          article.article
+            h2.article__header Магазин New Balance — дисконт-магазин на м. Чистые Пруды
+            p.article__text Чтобы лично посмотреть и примерить кроссовки New Balance, Вы можете приехать в наш магазин. О наличии конкретной модели и размеров Вы всегда можете уточнить у наших менеджеров, каждый день с 10-00 до 21-00 по телефону:  8 (495) 150-11-07!
+            p.article__text Цены в магазине соответсвуют ценам на сайте, к оплате принимается только наличный расчет.
+            p.article__text Мы находимся по адресу:
+            p.article__text г. Москва, Мясницкая, д. 17 <br> *7 дней в неделю с 10.00 до 21.00.
+          article.article
+            h2.article__header Интернет-магазин New Balance: широкий выбор, недорого, качественно, с доставкой по Москве
+            p.article__text Ознакомьтесь с ассортиментом, представленным в каталоге:
+            ul.article__list
+              li.article__list-item Женские и мужские кроссовки New Balance моделей 574, 576, 580, 670, 990, 996, 997, 998, 999, 1500. Выбирайте варианты из замши, кожи и текстиля, облегченные, демисезонные и зимние модели.
+              li.article__list-item Рюкзаки New Balance из прочной, износоустойчивой ткани, с крупным логотипом бренда на лицевой части.
+              li.article__list-item Мужские поло, футболки для повседневной носки и активного отдыха. Они отличаются удобным кроем, разнообразием расцветок, которое передано на фото каждой позиции, и низкой ценой.
+              li.article__list-item Аксессуары и средства по уходу за обувью: растяжители, пена, щетки для обуви, шнурки разных цветов.
+            p.article__text На официальном сайте покупатели найдут все популярные модели-оригиналы, ставшие «лицом» бренда New Balance. Приобретайте дешево одежду и кроссовки NB в онлайн-режиме или, посетив дисконт-магазина в Москве. Будучи официальным дилером, интернет-магазин реализует только 100% оригинальные модели, качество которых подтверждают сертификаты.
+          img.article__img(src="img/store-crew.jpg", alt="New Balance")
+          script(type="text/javascript", charset="utf-8", async, src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Q1Vdxmdk6nOyX1reBocHr3Bv-5Q_DB-s&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true")
+          .feedback-item
+            .feedback-item__header
+              img.feedback-item__picture(src="img/feedback-3.jpg", alt="Валентин")
+              .feedback-item__author Валентин
+            p.feedback-item__content Я заказываю здесь кроссовки уже 2-й раз. Первые до сих пор не убил, хотя ношу почти каждый день. Качество-супер, ценовая политика вполне приемлимая. Работой магазина доволен, как и в прошлый раз, всё оперативно доставили. Консультанты помогли подобрать размер ещё в первый раз и теперь я знаю какой мой. Кроссовки пришли чётко по моей ноге. Подумываю заказать ещё одну пару. В общем магазин рекомендую-кроссовки здесь классные, не пожалеете!
+      include ../templates/footer.jade
+      +modalCallback
+      +modalOrder
