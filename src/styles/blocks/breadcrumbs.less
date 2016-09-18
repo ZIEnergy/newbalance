@@ -1,0 +1,32 @@
+.breadcrumbs {
+  display: flex;
+  margin-bottom: 30px;
+  
+  &__item {
+    list-style: none;
+    
+    &:after {
+      content: '»';
+      font-family: @font-family-main;
+      font-size: 16px;
+      margin: 0 10px;
+    }
+    
+    &:last-child {
+      
+      &:after {
+        display: none;
+      }
+    }
+  }
+  
+  &__item-link {
+    color: #000;
+    font-family: @font-family-main;
+    font-size: 16px;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

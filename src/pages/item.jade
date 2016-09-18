@@ -1,0 +1,170 @@
+doctype html
+html(lang='en')
+  include ../templates/head.jade
+  include ../templates/mixins.jade
+  
+  body
+    .wrapper
+      include ../templates/header.jade
+      .content
+        .product
+          .product__top
+            .product__left
+              .breadcrumbs
+                li.breadcrumbs__item
+                  a.breadcrumbs__item-link(href="#") Кроссовки New Balance
+                li.breadcrumbs__item
+                  a.breadcrumbs__item-link(href="#") Все модели
+                li.breadcrumbs__item
+                  a.breadcrumbs__item-link(href="#") ЖЕНСКИЕ
+                li.breadcrumbs__item
+                  a.breadcrumbs__item-link(href="#") New Balance женские M574BCB (2294)
+              .product__gallery
+                .product__gallery-big
+                  .product__gallery-sale
+                  img.product__gallery-big-img(src="img/item-1-big.jpg", alt="New Balance")
+                .product__thumbnails-container
+                  a.product__thumbnail(href="#")
+                    img.product__thumbnail-img(src="img/item-1-small.jpg", alt="New Balance")
+                  a.product__thumbnail(href="#")
+                    img.product__thumbnail-img(src="img/item-2-small.jpg", alt="New Balance")
+                  a.product__thumbnail(href="#")
+                    img.product__thumbnail-img(src="img/item-3-small.jpg", alt="New Balance")
+            .product__right
+              h1.product__name New Balance женские M574BCB
+              .product__price
+                .product__price-new 2 990
+                  span.product__price-currency &nbsp;&#8381;
+                .product__price-old 8 700
+                  span.product__price-currency &nbsp;&#8381;
+              .product__sizes
+                .product__sizes-header Доступные размеры (RUS):
+                ul.product__sizes-list
+                  li.product__sizes-item.product__sizes-item--inactive
+                    a.product__sizes-item-content 35
+                  li.product__sizes-item
+                    a.product__sizes-item-content 36
+                  li.product__sizes-item
+                    a.product__sizes-item-content 37
+                  li.product__sizes-item
+                    a.product__sizes-item-content 38
+                  li.product__sizes-item
+                    a.product__sizes-item-content 39
+                  li.product__sizes-item
+                    a.product__sizes-item-content 40
+                  li.product__sizes-item
+                    a.product__sizes-item-content 41
+              .size-question
+                a.size-question__link(href="#") Как определить свой размер?
+                .size-question__popup
+                  h3.size-question__popup-header Как выбрать обувь своего размера?
+                  .size-question__popup-content
+                    img.size-question__picture(src="img/foot.jpg", alt="Foot")
+                    p.size-question__text Вам понадобится сантиметровой лента или линейка. <br><br> Поставьте ногу на чистый лист бумаги. Отметьте крайние границы ступни и измерьте расстояние между самыми удаленными точками стопы. 
+                  h3.size-question__popup-header Таблица соответствия размеров:
+                  .size__question__table-controls
+                    a.size-question__table-btn(href="#") Мужские
+                    a.size-question__table-btn(href="#") Женские
+                  table.size-question__table.size-question__table-man
+                    tr.size-question__table-row
+                      td.size-question__table-cell см
+                      td.size-question__table-cell 25
+                      td.size-question__table-cell 25.5
+                      td.size-question__table-cell 26.5
+                      td.size-question__table-cell 27
+                      td.size-question__table-cell 27.5
+                      td.size-question__table-cell 28.5
+                      td.size-question__table-cell 29
+                    tr.size-question__table-row
+                      td.size-question__table-cell RUS
+                      td.size-question__table-cell 39
+                      td.size-question__table-cell 40
+                      td.size-question__table-cell 41
+                      td.size-question__table-cell 42
+                      td.size-question__table-cell 43
+                      td.size-question__table-cell 44
+                      td.size-question__table-cell 45
+                    tr.size-question__table-row
+                      td.size-question__table-cell EUR
+                      td.size-question__table-cell 39
+                      td.size-question__table-cell 40
+                      td.size-question__table-cell 41
+                      td.size-question__table-cell 42
+                      td.size-question__table-cell 43
+                      td.size-question__table-cell 44
+                      td.size-question__table-cell 45
+                    tr.size-question__table-row
+                      td.size-question__table-cell UK
+                      td.size-question__table-cell 6.5
+                      td.size-question__table-cell 7.5
+                      td.size-question__table-cell 8
+                      td.size-question__table-cell 9
+                      td.size-question__table-cell 9.5
+                      td.size-question__table-cell 10.5
+                      td.size-question__table-cell 11.5
+                    tr.size-question__table-row
+                      td.size-question__table-cell US
+                      td.size-question__table-cell 7
+                      td.size-question__table-cell 8
+                      td.size-question__table-cell 8.5
+                      td.size-question__table-cell 9.5
+                      td.size-question__table-cell 10
+                      td.size-question__table-cell 11
+                      td.size-question__table-cell 12
+                  table.size-question__table.size-question__table-woman
+                    tr.size-question__table-row
+                      td.size-question__table-cell см
+                      td.size-question__table-cell 22.5
+                      td.size-question__table-cell 23
+                      td.size-question__table-cell 23.5
+                      td.size-question__table-cell 24.5
+                      td.size-question__table-cell 25
+                      td.size-question__table-cell 25.5
+                      td.size-question__table-cell 26.5
+                    tr.size-question__table-row
+                      td.size-question__table-cell RUS
+                      td.size-question__table-cell 35
+                      td.size-question__table-cell 36
+                      td.size-question__table-cell 37
+                      td.size-question__table-cell 38
+                      td.size-question__table-cell 39
+                      td.size-question__table-cell 40
+                      td.size-question__table-cell 41
+                    tr.size-question__table-row
+                      td.size-question__table-cell EUR
+                      td.size-question__table-cell 36
+                      td.size-question__table-cell 37
+                      td.size-question__table-cell 38
+                      td.size-question__table-cell 39
+                      td.size-question__table-cell 40
+                      td.size-question__table-cell 41
+                      td.size-question__table-cell 42
+                    tr.size-question__table-row
+                      td.size-question__table-cell UK
+                      td.size-question__table-cell 3.5
+                      td.size-question__table-cell 4
+                      td.size-question__table-cell 5
+                      td.size-question__table-cell 6
+                      td.size-question__table-cell 6.5
+                      td.size-question__table-cell 7.5
+                      td.size-question__table-cell 8
+                    tr.size-question__table-row
+                      td.size-question__table-cell US
+                      td.size-question__table-cell 5.5
+                      td.size-question__table-cell 6
+                      td.size-question__table-cell 7
+                      td.size-question__table-cell 8
+                      td.size-question__table-cell 8.5
+                      td.size-question__table-cell 9.5
+                      td.size-question__table-cell 10
+              .product__buttons
+                a.btn-buy(href="#") Купить сейчас
+                a.btn-cart(href="#") В корзину
+              ul.product__features
+                li.product__features-item Есть в наличии
+                li.product__features-item Бесплатная доставка за 90 минут
+                li.product__features-item Натуральная замша
+          .product__dscr История New Balance началась в 1906 году в США. Основателем был Вильям Райли. Как бы не смешно звучало, но идея к нему пришла, когда он смотрел на курочку,заметил, что куринная лапка очень устойчивая, за счет 3-ех точек опоры. Эта идея и была реализована. За это время компания сменила множество владельцев. Были и взлеты и падения, но несмотря на это, в настоящее время компания New Balance - одна из самых ведущих на рынке спортивной обуви. И на протяжении всей своей истории нью беланс остается верной своим принципам - технологичность, комфорт, качество!
+      include ../templates/footer.jade
+      +modalCallback
+      +modalOrder
