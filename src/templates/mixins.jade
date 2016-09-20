@@ -1,19 +1,8 @@
-mixin popular-item(img, name, priceNew, priceOld)
-  a.popular-item(href="item.html")
-    img.popular-item__picture(src="img/"+img, alt="New Balance")
-    p.popular-item__name #{name}
-    .popular-item__price
-      .popular-item__price-new #{priceNew}
-        span.popular-item__price-currency &nbsp;&#8381;
-      .popular-item__price-old #{priceOld}
-        span.popular-item__price-currency &nbsp;&#8381;
-        
-        
 mixin item(img, name, priceNew, priceOld, size1, size2, size3, size4, size5)
   li.item
    .item__content
       a.item__link(href="item.html")
-        img.item__picture.lazy(data-original="img/"+img, alt="New Balance", width="200", height="150")
+        img.item__picture.lazy(data-original="img/"+img, alt="Converse", width="200", height="150")
         p.item__name #{name}
       .item__price
         .item__price-new #{priceNew}

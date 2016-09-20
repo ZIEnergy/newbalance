@@ -1,23 +1,51 @@
 .sale {
+  margin-left: 15px;
   
+  &__header {
+    font-size: 20px;
+    font-family: @font-family-main;
+    text-align: center;
+  }
   
   &__item {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
   }
   
   &__item-img {
-    
+    max-width: 70%;
+    margin: 0 auto;
   }
   
   &__price {
-    
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   
   &__price-new {
-    .currency;
+    font-family: @font-family-main;
+    font-size: 30px;
+    color: @color-primary;
+    text-align: right;
+    font-weight: 700;
   }
   
   &__price-old {
-    .currency;
+    font-family: @font-family-main;
+    font-size: 18px;
+    text-align: right;
+    text-decoration: line-through;
+  }
+  
+  &__name {
+    font-size: 21px;
+    margin-bottom: 20px;
+    font-family: @font-family-main;
+    text-align: center;
+    margin-top: 10px;
   }
 }
