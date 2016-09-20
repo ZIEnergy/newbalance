@@ -13,7 +13,7 @@ mixin item(img, name, priceNew, priceOld, size1, size2, size3, size4, size5)
   li.item
    .item__content
       a.item__link(href="#")
-        img.item__picture(src="img/"+img, alt="New Balance")
+        img.item__picture.lazy(data-original="img/"+img, alt="New Balance", width="200", height="150")
         p.item__name #{name}
       .item__price
         .item__price-new #{priceNew}

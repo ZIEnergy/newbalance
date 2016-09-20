@@ -29,4 +29,6 @@ $(document).ready(function() {
     $('.size-question__table--woman').fadeIn('fast');
   });
   
+  $("img.lazy").lazyload();
+  
 });

@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+  include ../templates/head.jade
+  include ../templates/mixins.jade
+  
+  body
+    .wrapper
+      include ../templates/header.jade
+      .content
+        include ../templates/sidebar.jade
+        section.section
+          .feedback-item
+            .feedback-item__header
+              img.feedback-item__picture(src="img/feedback-anonim.png", alt="Валентин")
+              .feedback-item__author Яна Полоник
+            p.feedback-item__content Добрый день! Вчера были в Вашем магазине, купили кроссовки мне и маме, очень классные, мягкие и теплые! Консультанты вежливые, что хорошо были размеры многих моделей, можно было померить и выбрать, какие удобнее и лучше смотрятся по цвету)) Может быть придем еще за парой) https://vk.com/id1659553
+          .feedback-item
+            .feedback-item__header
+              img.feedback-item__picture(src="img/feedback-3.jpg", alt="Валентин")
+              .feedback-item__author Марина Клыкова
+            p.feedback-item__content Отличный магазин моих любимых кроссовок. Заказывала дважды-всё супер! Мне первый раз не подошел размер. ЧТо-то торопилась и не очень хорошо померила. Сходила на работу в них - жмут. Так мне поменяли размер без проблем. https://vk.com/klukovka88
+          .feedback-item
+            .feedback-item__header
+              img.feedback-item__picture(src="img/feedback-2.jpg", alt="Валентин")
+              .feedback-item__author Леонтьева Ольга
+            p.feedback-item__content Передайте, пожалуйста, мою искреннюю благодарность консультанту Анне! Только благодаря её терпению, желанию помочь и как можно лучше сделать свою работу, размер кроссовок подошёл мне идеально!! Анна очень вежлива, добра и участлива! Спасибо ей большое! Качество кроссовок хорошее, доставка быстрая! Спасибо спасибо! https://vk.com/id707671
+          .feedback-item
+            .feedback-item__header
+              img.feedback-item__picture(src="img/feedback-1.jpg", alt="Валентин")
+              .feedback-item__author Виталий Киселев ( Москва )
+            p.feedback-item__content Замечательный магазин, грамотный и внимательный молодой персонал. Подбирают нужную модель, помогают с выбором. С заменой неподошедшей модели не возникло никаких проблем. Кроссовки качественные, в живую даже красивее картинки. Купил на лето NB 999, так понравились, что прикупил ещё и на осень 574 кожа. Модели все настоящий аутентичный NB. Соотношение качество-цена порадовало. За 2 пары заплатил меньше, чем в бутике бы отдал за одну.А качество такое-же хорошее. Если буду ещё покупать NB, то только тут. Рекомендую https://vk.com/v.piton
+          .feedback-item
+            .feedback-item__header
+              img.feedback-item__picture(src="img/feedback-anonim.png", alt="Валентин")
+              .feedback-item__author Полина
+            p.feedback-item__content Я купила здесь кроссовки WL996CLD женские дешевле, чем в бутике. Мне никто не поверил. А качество супер, я воду на них наливала, вообще не промокают, удачный эксперимент. Точно оригинал. https://vk.com/pporuchikova
+          .feedback-item
+            .feedback-item__header
+              img.feedback-item__picture(src="img/feedback-3.jpg", alt="Валентин")
+              .feedback-item__author Иван
+            p.feedback-item__content Магазин понравился. Дали полную консультацию, цена нормальная и качество хорошее, быстрая доставка. Я остался доволен!
+      include ../templates/footer.jade
+      +modalCallback
+      +modalOrder
