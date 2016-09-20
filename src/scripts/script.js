@@ -7,7 +7,8 @@ $(document).ready(function() {
   $('[data-catalog-btn]').click(function(e) {
     e.preventDefault();
     $('.item:nth-child(n+16)').fadeIn('fast');
-    $(this).fadeOut('fast');
+    $('.items-bottom').css("display", "flex");
+    $(this).hide();
   });
   
   $('[data-size-popup]').click(function(e) {

@@ -1,0 +1,17 @@
+.items-bottom {
+  display: none;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  
+  .item {
+    
+    &:nth-child(n+2) {
+      margin-left: 74px;
+    }
+    
+    &:nth-child(5n) {
+      margin-left: 0;
+    }
+  }
+}
