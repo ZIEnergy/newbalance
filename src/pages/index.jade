@@ -12,11 +12,40 @@ html(lang='en')
           p.banner__store Магазин на&nbsp;
             a.banner__store-link(href="#") Чистых прудах
           a.banner__button(href="#") Распродажа
-        .popular
-          +popular-item('popular-item-1.jpg', 'New Balance женские M574BCB (2294)', '3 990', '8 700')
-          +popular-item('popular-item-2.jpg', 'New Balance женские M574BCC (2294)', '3 990', '8 700')
-          +popular-item('popular-item-3.jpg', 'New Balance мужские M574TK', '3 990', '8 700')
-          +popular-item('popular-item-4.jpg', 'New Balance мужские MRL996NDB (1061)', '3 990', '9 900')
+        .sale
+          .sale__item
+            img.sale__item-img(src="sale-1.jpg", alt="Converse")
+            .sale__price
+              p.sale__price-new 2390
+              p.sale__price-old 4900
+          .sale__name Converse Low White (111)
+          form.sale-form(action="#" method="post")
+            .sale-form__left
+              input.input-text.sale-form__name(type="text" placeholder="Имя" name="name")
+              input.input-text.sale-form__phone(type="text" placeholder="Телефон" name="phone")
+            .sale-form__right
+              ul.sale-form__sizes
+                li.sale-form__sizes-list-item
+                  a.sale-form__sizes-list-link(href="#") 36
+                li.sale-form__sizes-list-item
+                  a.sale-form__sizes-list-link(href="#") 37
+                li.sale-form__sizes-list-item
+                  a.sale-form__sizes-list-link(href="#") 38
+                li.sale-form__sizes-list-item
+                  a.sale-form__sizes-list-link(href="#") 39
+                li.sale-form__sizes-list-item
+                  a.sale-form__sizes-list-link(href="#") 40
+                li.sale-form__sizes-list-item
+                  a.sale-form__sizes-list-link(href="#") 41
+                li.sale-form__sizes-list-item
+                  a.sale-form__sizes-list-link(href="#") 42
+                li.sale-form__sizes-list-item
+                  a.sale-form__sizes-list-link(href="#") 43
+                li.sale-form__sizes-list-item
+                  a.sale-form__sizes-list-link(href="#") 44
+                li.sale-form__sizes-list-item
+                  a.sale-form__sizes-list-link(href="#") 45
+              button.sale-form__btn Купить сейчас
       h1.page-header NEW BALANCE — ДИСКОНТ ИНТЕРНЕТ-МАГАЗИН В МОСКВЕ
       .content
         include ../templates/sidebar.jade
